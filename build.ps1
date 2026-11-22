@@ -5,7 +5,7 @@
 # Postup aktualizace: zvednout verzi v addon.xml doplňku → spustit build.ps1 → nahrát změněné soubory na GitHub.
 param(
     [Parameter(Mandatory = $true)][string]$User,
-    [string]$Branch = 'main',
+    [string]$Branch = 'refs/heads/main',   # „refs/heads/main“ – adresa bez dlouhé mezipaměti GitHubu
     [string]$Repo = 'KODI-SPER'
 )
 $ErrorActionPreference = 'Stop'
