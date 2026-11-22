@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addons>
+<addon id="repository.kodisper" name="KODI-SPER" version="1.0.0" provider-name="KODI-SPER">
+  <extension point="xbmc.addon.repository" name="KODI-SPER">
+    <dir>
+      <info compressed="false">https://raw.githubusercontent.com/sperlichp2-png/KODI-SPER/main/addons.xml</info>
+      <checksum>https://raw.githubusercontent.com/sperlichp2-png/KODI-SPER/main/addons.xml.md5</checksum>
+      <datadir zip="true">https://raw.githubusercontent.com/sperlichp2-png/KODI-SPER/main/zips/</datadir>
+      <hashes>false</hashes>
+    </dir>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="cs_CZ">Repozitář KODI-SPER – doplněk PvS Cinema a jeho aktualizace</summary>
+    <description lang="cs_CZ">Po instalaci repozitáře nainstaluj PvS Cinema přes Doplňky → Instalovat z repozitáře → KODI-SPER. Nové verze se pak stahují automaticky.</description>
+    <platform>all</platform>
+    <assets>
+      <icon>icon.png</icon>
+    </assets>
+  </extension>
+</addon>
+<addon id="plugin.video.webshare.hledani" name="PvS Cinema" version="3.4.0" provider-name="KODI-SPER">
+  <requires>
+    <import addon="xbmc.python" version="3.0.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="main.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.service" library="service.py"/>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="cs_CZ">PvS Cinema – filmy a seriály z Webshare.cz s katalogem z TMDB</summary>
+    <description lang="cs_CZ">Katalog filmů a seriálů z TMDB (novinky, populární, trendy, žánry, hodnocení), přehrávání z Webshare.cz s výběrem streamu (kvalita, kodek, audio stopy, bitrate), automatické titulky a hledání z telefonu. Ovládání po vzoru Stream Cinema.</description>
+    <platform>all</platform>
+    <license>MIT</license>
+    <assets>
+      <icon>icon_logo.png</icon>
+      <fanart>fanart_logo.jpg</fanart>
+    </assets>
+  </extension>
+</addon>
+</addons>
