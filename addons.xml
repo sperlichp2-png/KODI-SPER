@@ -18,7 +18,7 @@
     </assets>
   </extension>
 </addon>
-<addon id="plugin.video.webshare.hledani" name="PvS Cinema" version="3.5.2" provider-name="KODI-SPER">
+<addon id="plugin.video.webshare.hledani" name="PvS Cinema" version="3.6.0" provider-name="KODI-SPER">
   <requires>
     <import addon="xbmc.python" version="3.0.0"/>
   </requires>
